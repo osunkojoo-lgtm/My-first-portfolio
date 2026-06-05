@@ -115,4 +115,50 @@ button:hover{
    
     padding: 20px;
      border-radius: 15px;
+     backdrop-filter: blur(10px);
+     transition: .3s;
+}
+
+.card:hover,
+.project:hover{
+    transform:
+    translateY(-10px);
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding: 15px;
+    border:none;
+    border-radius: 10px;
+}
+
+textarea{
+    height: 120px;
+}
+    
+footer{
+    text-align:center;
+    padding: 30px;
+}
+
+@media(max-width:768px){
+     nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
 }
