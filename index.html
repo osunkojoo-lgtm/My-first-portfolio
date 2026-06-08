@@ -11,6 +11,7 @@
 
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
 
 <body>
@@ -20,10 +21,10 @@
         <h2>Mide</h2>
 
         <div class="links">
-            <a href="#">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+        <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+       <a href="#"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#"><i class="fa-solid fa-laptop"></i></i> Projects</a>
+        <a href="#"><i class="fa-solid fa-address-book"></i> Contact</a>
         </div>
     </nav>
 
@@ -107,23 +108,17 @@
 
         <h2>Contact Me</h2>
 
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="55ced3a9-7d2f-45bf-acb8-e32f38d1a9a7">
+        <input type="text"
+         placeholder="Your Name" name="name">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-            >
+        <input type="email"
+         placeholder="Your Email" name="email">
 
-            <input
-                type="email"
-                placeholder="Your Email"
-            >
+         <textarea placeholder="Your Message" name="message"></textarea>
 
-            <textarea
-                placeholder="Your Message"
-            ></textarea>
-
-            <button>Send Message</button>
+     <button type="submit">Send Message</button>
 
         </form>
 
